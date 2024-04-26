@@ -1,0 +1,217 @@
+#mainslogan{
+    position:absolute;
+    font-size: 2.3em;
+    top:15em;
+    left: 15px;
+    font-family:barlow,sans-serif,arial;
+    color:rgb(0, 0, 0);
+}
+
+body{
+    background-image: url('https://wallpapercave.com/wp/wp3697512.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.amg-logo{
+    width: 100px;
+    height: 100px;
+    position:absolute ;
+    left:2em;
+    top: 1em;
+}
+
+.menu-elements{
+    padding: 0%;
+    margin: 0;
+    text-align: center;
+    background-color:rgb(61, 57, 57);
+}
+
+.menu-elements ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.menu-elements ul li{
+    width: 170px;
+    margin: 30px;
+    padding: 30px;
+}
+
+.menu-elements ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.lounge-button{
+    background-color: red;
+    width:140px;
+    height:40px;
+    border: 1px solid red;
+    border-radius:15px;
+    margin:6px 20px;
+    padding: 4px 15px;
+    font-family: barlow, sans-serif;
+    font-size: 1.3em;
+}
+.lounge-button:hover{
+    background-color: red;
+    box-shadow: 0 0 16px 0 red;
+    color: white;
+    outline: white;
+    cursor:pointer;
+}
+
+.sub-menu-1{
+    display: none;
+    opacity: 65%;
+    font-family: barlow, sans-serif;
+    font-size: 25px;
+}
+.menu-elements ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: black;
+    border-top: 7px solid red;
+    cursor:pointer;
+}
+.menu-elements ul li:hover .sub-menu-1 ul{
+    display: block;
+    cursor:pointer;
+}
+.menu-elements ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 2px;
+    border-bottom: 1px solid white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    cursor:pointer;
+}
+
+.vehicles{
+    font-family: barlow, sans-serif;
+    font-size: 1.7em;
+}
+.world-amg{
+    font-family: barlow, sans-serif;
+    font-size: 1.5em;
+}
+
+.vehicles a:hover{
+    color: red;
+    cursor:pointer;
+}
+.world-amg a:hover{
+    color: red;
+    cursor:pointer;
+}
+
+.sub-menu-1 ul li:hover{
+    color: red;
+    cursor:pointer;
+}
+
+.sub-menu-2{
+    display: none;
+    font-family: barlow, sans-serif;
+    font-size: 25px;
+    opacity: 65%;
+}
+.menu-elements ul li:hover .sub-menu-2{
+    display: block;
+    position: absolute;
+    background-color: black;
+    border-top: 7px solid red;
+    cursor:pointer;
+}
+.menu-elements ul li:hover .sub-menu-2 ul{
+    display: block;
+    cursor:pointer;
+}
+.menu-elements ul li:hover .sub-menu-2 ul li{
+    width:150px;
+    padding: 2px;
+    border-bottom: 1px solid white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    cursor:pointer;
+}
+.sub-menu-2 ul li:hover{
+    color: red;
+    cursor:pointer;
+}
+
+.sub-menu-3{
+    display: none;
+    font-family: barlow, sans-serif;
+    font-size: 25px;
+    opacity: 65%;
+}
+.menu-elements ul li:hover .sub-menu-3{
+    display: block;
+    position: absolute;
+    background-color: black;
+    border-top: 7px solid red;
+    cursor:pointer;
+}
+.menu-elements ul li:hover .sub-menu-3 ul{
+    display: block;
+    cursor:pointer;
+}
+.menu-elements ul li:hover .sub-menu-3 ul li{
+    width: 150px;
+    padding: 2px;
+    border-bottom:1px solid white;
+    background: transparent;
+    border-radius: 0;
+    text-align:left;
+    cursor:pointer;
+}
+.sub-menu-3 ul li:hover{
+    color: red;
+    cursor:pointer;
+}
+
+.transparent-section-note{
+    background-color: rgb(42, 41, 41);
+    height:290px;
+    width:470px;
+    margin-top:40px;
+    margin-left: 2em;
+    opacity: 85%;
+}
+h2{
+    color: white;
+    position: absolute;
+    margin-top: 8px;
+    margin-left:8px;
+    font-family:sans-serif, arial;
+    border-bottom:solid red;
+    border-bottom-width: 4.4px;
+    padding-bottom: 60px;
+    width: fit-content;
+}
+.diagram-main-text{
+    color: white;
+    position: relative;
+    margin: 0;
+    padding:0;
+    font-family: Barlow, sans-serif, Arial;
+    font-size: 40px;
+    line-break: none;
+    top: 3.8em;
+    left: 20px;
+}
+
