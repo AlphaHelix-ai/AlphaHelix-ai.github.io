@@ -195,11 +195,22 @@ flex-wrap:wrap;
     font-weight:normal;
 }
 #m1, #m2, #m3, #m4{
-    height:300px;
+    height:350px;
     width:auto;
 }
 #m5{
-    height:auto;
-    width:360px;
-
+    width:auto;
+    height:420px;
+    transform: rotate(90deg);
+    position:relative;
+    left:90px;
+    top:-60px;
+}
+#m6{
+    width:auto;
+    height:420px;
+    transform: rotate(-90deg);
+    position:relative;
+    left:300px;
+    top:-60px;
 }
