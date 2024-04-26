@@ -105,6 +105,7 @@ min-width:1150px;
 display:flex;
 flex-direction: column;
 flex-wrap:wrap;
+padding: 0 50px 0 50px;
 
 }
 .work-header{
