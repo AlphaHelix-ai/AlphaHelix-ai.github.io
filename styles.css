@@ -13,52 +13,70 @@ body{
     background-position: center;
     background-attachment: fixed;
     margin:0;
-    width:100%;
+    width:100%; 
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
     align-content:space-between;
     justify-content:flex-start;
     align-items:stretch;
+    padding:0;
+    
 
 }
-hr{
-    background-color:rgb(154, 102, 102);
-    height:150px;
+.greet{
     width:100%;
-    border:none;
-
-}
-.profile{
-    width:100%;
-    min-width:1150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    position: absolute;
-    
-}
-#greetings{
-    color:antiquewhite;
-    margin: auto; 
-    font-family: sans-serif;
-    
-    height:60px;
-    z-index:1;
+    height:450px;
     display:flex;
-    justify-content: center;
+    flex-direction:column;
     align-items:center;
-    position:absolute;
-    top:280px; 
-    font-size:20px; 
+}
+
+.greet-bar{
+    background-color:rgb(154, 102, 102);
+    height:200px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+
 }
 .profile-picture{
-    height: 150px;
-    border-radius:100px;
-    margin:auto;
+    height:200px;
+    border-radius:100px 100px 100px 100px;
     position:absolute;
-    top:75px;
+    top:100px;
+}
+.space-after-pp{
+    height:100px;
+    width:100%;
+
+}
+.greetings{
+    color:antiquewhite;
+    height:100px; 
+    font-family:sans-serif;
+}
+@media screen and (max-width:767px){
+    .greet{
+        height:200px;
+    }
+    .greet-bar{
+        height:100px;
+    }
+    .profile-picture{
+        height:80px;
+        position:absolute;
+        top:50px;
+    }
+    .space-after-pp{
+        height:25px;
+    }
+    .greetings{
+        font-size:8px;
+        height:65px;
+
+    }
 }
 
 /*Buttons*/
@@ -69,16 +87,14 @@ hr{
     align-items: center;
     flex-direction:row;
     flex-wrap:nowrap;
-    height: 400px;
-    padding: 300px 0 0 0;
-    width:100vh;
-    min-width:1150px;
-    margin:auto;
+    height:200px;
+    width:100%;
+    margin-top:80px;
 
     
     
 }
-button{
+button:not(.office-hours){
     display: inline-block;
     width: 200px;
     height: 90px;
@@ -91,20 +107,33 @@ button{
     border: 1px solid rosybrown;
     
 }
-button:hover{
+button:hover:not(.office-hours){
     cursor: pointer;
     background-color:rgb(227, 168, 141);
     width: 250px;
+
+}
+@media screen and (max-width:767px){
+    .button-row{
+        margin:auto;
+    }
+    button:not(.office-hours){
+        width:100px;
+        height:50px;
+        font-size:12px;
+        margin:8px;
+    }
 
 }
 
 /* Work Addresses */
 
 .my-works{
-min-width:1150px;
 display:flex;
 flex-direction: column;
 flex-wrap:wrap;
+width:100%;
+margin-top:80px;
 
 }
 .work-header{
@@ -121,18 +150,39 @@ flex-wrap:wrap;
     flex-direction:row;
     justify-content:center;
     width:100%;
-    min-width:1150px;
     margin:auto;
     
 }
-.amg-homepage, .technical-documentation{
-     width:400px;  
-     border:5px solid transparent; 
-     
+.amg-homepage{
+    margin-right:20px;
+    width:407px;  
+    border:5px solid transparent; 
+}
+.technical-documentation{
+    width:400px;  
+    border:5px solid transparent; 
 }
 .signup{
-    width:320px;
+    width:325px;
     border: 5px solid transparent;
+    margin-right:20px;  
+}
+@media screen and (max-width:767px){
+    .my-works{
+        margin-top:auto;        
+    }
+    .work-header{
+        font-size:26px;
+    }
+    .amg-homepage{
+        width:180px;
+    }
+    .technical-documentation{
+        width:180px;
+    }
+    .signup{
+        width:145px;
+    }
 }
 .amg-homepage:hover, .signup:hover, .technical-documentation:hover{
     border-color:rosybrown;
@@ -142,8 +192,7 @@ flex-wrap:wrap;
 
 /* About Me Section */
 .page-container{
-    margin:auto;
-    min-width:700px;
+    margin-top:50px;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -173,6 +222,21 @@ flex-wrap:wrap;
 }
 .about-me-paragraph{
     font-family:sans-serif;    
+}
+@media screen and (max-width:767px){
+    .page-container{
+        height:300px;
+        margin:auto;
+    }
+    .About-me{
+        height:280px;
+    }
+    .About-me h1{
+        font-size:16px;
+    }
+    .about-me-paragraph{
+        font-size:8px;
+    }
 } 
 
 /* Microorganisms World */
@@ -213,4 +277,79 @@ flex-wrap:wrap;
     position:relative;
     left:300px;
     top:-60px;
+
+}
+
+/*appointment*/
+.appointment{
+    display:flex;
+    justify-content: space-between;
+    margin-top:10px;
+    margin-bottom:80px;
+    background-color:rgba(255, 255, 255, 0.9);
+    width:100%;
+}
+.appointment .appointment-description{
+    height:450px;
+    border-radius:0 180px 80px 0;
+    width:50%;
+    display:flex;
+
+}
+.appointment .appointment-description p{
+    font-size:24px;
+    font-family:sans-serif;
+    width:500px;
+    margin:auto;
+}
+.appointment .colored-section{
+    width:50%;
+    height:450px;
+    background-color:rgba(144, 68, 237, 1);
+    border-radius:180px 0 0 80px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.appointment .colored-section button{
+    height:45px;
+    width:150px;
+    margin:auto;   
+    background-image:url(booking.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+    padding-left:30px;
+    border-radius:10px 10px 10px 10px;
+    background-color:rgb(255, 255, 255);
+    font-family:sans-serif;
+    font-size:16px;
+    border:1px transparent rgb(255, 255, 255);
+    
+    
+}
+.appointment .colored-section button:hover{
+    background-color:rgb(231, 231, 231);
+    cursor:pointer;
+    border:2px solid black;
+}
+@media screen and (max-width:767px){
+    .appointment{
+        height:200px;
+    }
+    .appointment .appointment-description{
+        height:200px;
+        padding-left:20px;
+    }
+    .appointment .appointment-description p{
+        font-size:14px;
+    }
+    .appointment .colored-section{
+        height:200px;
+    }
+    .appointment .colored-section button{
+        height:30px;
+        width:100px;
+        font-size:12px;
+    }
 }
