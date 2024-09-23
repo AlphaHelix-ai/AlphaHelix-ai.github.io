@@ -260,12 +260,12 @@ margin-top:80px;
     justify-content: center;
     height:300px
 }
-.current-work div img{
+.current-work div a img{
     width:400px;
     height:auto;
     border: 7px solid transparent;
 }
-.current-work div img:hover{
+.current-work div a img:hover{
     border-color:rosybrown;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
