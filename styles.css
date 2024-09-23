@@ -243,6 +243,33 @@ margin-top:80px;
         font-size:6px;
     }
 } 
+/*Current Work Showcase*/
+.current-work{
+    display: flex;
+    flex-direction: column;
+}
+.current-work h1{
+    font-family:sans-serif;
+    text-align: center;
+    font-size:33px;
+    color: bisque;
+
+}
+.current-work div{
+    display: flex;
+    justify-content: center;
+    height:300px
+}
+.current-work div img{
+    width:400px;
+    height:auto;
+    border: 7px solid transparent;
+}
+.current-work div img:hover{
+    border-color:rosybrown;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
 
 /* Microorganisms World */
 .microbiology{
