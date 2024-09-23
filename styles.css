@@ -258,7 +258,7 @@ margin-top:80px;
 .current-work div{
     display: flex;
     justify-content: center;
-    height:300px
+    height:300px;
 }
 .current-work div a img{
     width:400px;
@@ -316,7 +316,7 @@ margin-top:80px;
 .appointment{
     display:flex;
     justify-content: space-between;
-    margin-top:10px;
+    margin-top:50px;
     margin-bottom:80px;
     background-color:rgba(255, 255, 255, 0.9);
     width:100%;
