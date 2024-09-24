@@ -308,14 +308,16 @@ footer{
 .category{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     width:100%;
     height:500px;
 }
-/*.category-images{
-    
-}*/
+category-images{
+    flex-grow: 1;
+    position: relative;
+}
 .category-images img{
     width:100%;
     height:400px;
+    object-fit: cover;
 }
